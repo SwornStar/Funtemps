@@ -35,7 +35,7 @@ func main() {
 		fmt.Println("-*enhetskode* *temperatur* -out *enhetskode*")
 		fmt.Println("eksempel: -F 32 -out C")
 		fmt.Println("du vil da få 32 farenheit ut i celcius")
-		fmt.Println("NB! C, F eller K MÅ ha store bokstaver")
+		fmt.Println("NB! MÅ BRUKE STORE BOKSTAVER (C, F og K)")
 		return
 	}
 
