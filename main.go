@@ -41,11 +41,11 @@ func main() {
 
 	// input output koden som kjøres til conv
 	if out == "C" && isFlagPassed("F") {
-		fmt.Println(conv.FahrenheitToCelsius(fahr))
+		fmt.Println(conv.FahrToCelsius(fahr))
 	}
 
 	if out == "F" && isFlagPassed("C") {
-		fmt.Println(conv.CelsiusToFahrenheit(cels))
+		fmt.Println(conv.CelsiusToFahr(cels))
 	}
 
 	if out == "K" && isFlagPassed("C") {
@@ -57,11 +57,11 @@ func main() {
 	}
 
 	if out == "F" && isFlagPassed("K") {
-		fmt.Println(conv.KelvinToFahrenheit(kelv))
+		fmt.Println(conv.KelvinToFahr(kelv))
 	}
 
 	if out == "K" && isFlagPassed("F") {
-		fmt.Println(conv.FahrenheitToKelvin(fahr))
+		fmt.Println(conv.FahrToKelvin(fahr))
 	}
 
 }
