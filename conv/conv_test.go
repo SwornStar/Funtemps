@@ -6,7 +6,7 @@ import (
 	"github.com/SwornStar/funtemps/conv"
 )
 
-func TestCelsiusToFahrenheit(t *testing.T) {
+func TestCelsiusToFahr(t *testing.T) {
 	tests := []struct {
 		input float64
 		want  float64
@@ -17,14 +17,14 @@ func TestCelsiusToFahrenheit(t *testing.T) {
 	}
 
 	for _, test := range tests {
-		got := conv.CelsiusToFahrenheit(test.input)
+		got := conv.CelsiusToFahrtest.input)
 		if got != test.want {
-			t.Errorf("CelsiusToFahrenheit(%v) = %v; want %v", test.input, got, test.want)
+			t.Errorf("CelsiusToFahr(%v) = %v; want %v", test.input, got, test.want)
 		}
 	}
 }
 
-func TestFahrenheitToKelvin(t *testing.T) {
+func TestFahrToKelvin(t *testing.T) {
 	tests := []struct {
 		input float64
 		want  float64
@@ -35,9 +35,9 @@ func TestFahrenheitToKelvin(t *testing.T) {
 	}
 
 	for _, test := range tests {
-		got := conv.FahrenheitToKelvin(test.input)
+		got := conv.FahrToKelvin(test.input)
 		if got != test.want {
-			t.Errorf("FahrenheitToKelvin(%v) = %v; want %v", test.input, got, test.want)
+			t.Errorf("FahrToKelvin(%v) = %v; want %v", test.input, got, test.want)
 		}
 	}
 }
@@ -60,7 +60,7 @@ func TestKelvinToCelsius(t *testing.T) {
 	}
 }
 
-func TestFahrenheitToCelsius(t *testing.T) {
+func TestFahrToCelsius(t *testing.T) {
 	tests := []struct {
 		input float64
 		want  float64
@@ -71,14 +71,17 @@ func TestFahrenheitToCelsius(t *testing.T) {
 	}
 
 	for _, test := range tests {
-		got := conv.FahrenheitToCelsius(test.input)
+		got := conv.FahrToCelsius(test.input)
 		if got != test.want {
-			t.Errorf("FahrenheitToCelsius(%v) = %v; want %v", test.input, got, test.want)
+			t.Errorf("FahrToCelsius(%v) = %v; want %v", test.input, got, test.want)
 		}
 	}
 }
 
-func TestKelvinToFahrenheit(t *testing.T) {
+
+
+
+func TestKelvinToFahr(t *testing.T) {
 	tests := []struct {
 		input float64
 		want  float64
@@ -91,7 +94,7 @@ func TestKelvinToFahrenheit(t *testing.T) {
 	for _, test := range tests {
 		got := conv.KelvinToFahrenheit(test.input)
 		if got != test.want {
-			t.Errorf("KelvinToFahrenheit(%v) = %v; want %v", test.input, got, test.want)
+			t.Errorf("KelvinToFahr(%v) = %v; want %v", test.input, got, test.want)
 		}
 	}
 }
